@@ -1,6 +1,4 @@
 ---
-import "@fontsource/poppins/200.css";
-
 interface Props {
   href: string;
   name: string;
@@ -12,12 +10,6 @@ const { href, name } = Astro.props;
 <a
   href={href}
   target="_blank"
-  class="w-full text-center py-4 mt-4 uppercase border backdrop-blur-[2px]"
+  class="w-full text-center py-4 uppercase border backdrop-blur-[2px]"
   >{name}</a
 >
-
-<style>
-  a {
-    font-family: "Poppins", sans-serif;
-  }
-</style>

@@ -1,7 +1,46 @@
 ---
+import "@fontsource-variable/lora";
+import "@fontsource/poppins/200.css";
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main></main>
+<Layout title="Andrea Martínez | Modelo y asesora de imágen">
+  <main class="w-screen h-screen flex flex-col items-center">
+    <div class="absolute top-0 left-0 w-full h-full bg-[#00000099]"></div>
+    <section
+      class="w-9/12 md:max-w-[500px] h-full flex flex-col justify-center items-center text-[#e9e3e3] z-10"
+    >
+      <h1 class="text-4xl xl:text-5xl xl:leading-normal leading-10">
+        Andrea Martínez
+      </h1>
+      <p class="text-base uppercase font-extralight tracking-widest">
+        Modelo | Asesora de Imágen
+      </p>
+      <p class="mt-4 mb-8 text-center tracking-widest text-base">
+        Es momento de dar el paso que tu imagen necesita.
+      </p>
+      <section class="w-full flex flex-col gap-4">
+        <Button href="#" name="Adquiere mi Ebook" />
+        <Button href="#" name="Agenda un asesoría" />
+        <Button href="#" name="Visita mi blog" />
+        <Button href="#" name="Mira mi último video" />
+      </section>
+    </section>
+  </main>
 </Layout>
+
+<style is:global>
+  main {
+    background: url("/public/background.webp") no-repeat center center/cover;
+  }
+
+  h1 {
+    font-family: "Lora Variable", serif;
+  }
+
+  p,
+  a {
+    font-family: "Poppins", sans-serif;
+  }
+</style>

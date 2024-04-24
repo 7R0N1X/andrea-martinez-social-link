@@ -1,46 +1,43 @@
 ---
-import "@fontsource-variable/lora";
-import "@fontsource/poppins/200.css";
+import '@fontsource-variable/onest';
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
+
+import FacebookIcon from '../assets/icons/FacebookIcon.astro';
+import InstagramIcon from '../assets/icons/InstagramIcon.astro';
+import TiktokIcon from '../assets/icons/TiktokIcon.astro';
+import YoutubeIcon from '../assets/icons/YoutubeIcon.astro';
 ---
 
 <Layout title="Andrea Martínez | Modelo y asesora de imágen">
   <main class="w-screen h-screen flex flex-col items-center">
-    <div class="absolute top-0 left-0 w-screen h-screen bg-[#00000099]"></div>
-    <section
-      class="w-9/12 md:max-w-[500px] h-full flex flex-col justify-center items-center text-[#e9e3e3] z-10"
-    >
-      <h1 class="text-4xl xl:text-5xl xl:leading-normal leading-10">
-        Andrea Martínez
-      </h1>
-      <p class="text-base uppercase font-extralight tracking-widest">
-        Modelo | Asesora de Imágen
-      </p>
-      <p class="mt-4 mb-8 text-center tracking-widest text-base">
-        Es momento de dar el paso que tu imagen necesita.
-      </p>
-      <section class="w-full flex flex-col gap-4">
-        <Button href="#" name="Adquiere mi Ebook" />
-        <Button href="#" name="Agenda un asesoría" />
-        <Button href="#" name="Visita mi blog" />
-        <Button href="#" name="Mira mi último video" />
+    <div class="absolute top-0 left-0 w-screen h-screen bg-[#000000a9]"></div>
+    <section class="w-full md:max-w-[500px] h-full flex flex-col justify-center items-center text-white/80 z-10 gap-2 px-5 sm:px-0">
+      <h1 class="text-3xl xl:text-5xl">Andrea Martínez</h1>
+      <p class="text-base uppercase tracking-widest">Modelo | Asesora de Imágen</p>
+      <p class="text-center tracking-widest font-extralight">Es momento de dar el paso que tu imagen necesita.</p>
+      <section class="flex gap-5 mt-5">
+        <LinkButton href="" class="text-white/70 hover:scale-110 hover:text-[#0866FF]"><FacebookIcon class="size-5 sm:size-6"/></LinkButton>
+        <LinkButton href="" class="text-white/70 hover:scale-110 hover:text-[#E4405F]"><InstagramIcon class="size-5 sm:size-6"/>
+        <LinkButton href="" class="text-white/70 hover:scale-110 hover:text-[#000000]"><TiktokIcon class="size-5 sm:size-6"/>
+        <LinkButton href="" class="text-white/70 hover:scale-110 hover:text-[#FF0000]"><YoutubeIcon class="size-5 sm:size-6"/>
       </section>
-    </section>
+      <section class="w-full flex flex-col gap-4 mt-5">
+        <LinkButton href="#" name="Adquiere mi Ebook" class="py-4 border hover:scale-105" />
+        <LinkButton href="#" name="Agenda un asesoría" class="py-4 border hover:scale-105" />
+        <LinkButton href="#" name="Visita mi blog" class="py-4 border hover:scale-105" />
+        <LinkButton href="#" name="Mira mi último video" class="py-4 border hover:scale-105" />
+      </section>
+    </section>    
   </main>
 </Layout>
 
 <style is:global>
   main {
-    background: url("/background.webp") no-repeat center center/cover;
+    background: url("../assets/background.webp") no-repeat center center/cover;
   }
 
-  h1 {
-    font-family: "Lora Variable", serif;
-  }
-
-  p,
-  a {
-    font-family: "Poppins", sans-serif;
+  body {
+    font-family: 'Onest Variable', sans-serif;
   }
 </style>

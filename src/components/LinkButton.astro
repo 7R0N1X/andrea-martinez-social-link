@@ -1,0 +1,8 @@
+---
+const { href, name, class: className } = Astro.props;
+---
+
+<a href={href} target="_blank" class=`{w-full text-center uppercase transition ${className} }`>
+  <slot/>
+  {name}
+</a>

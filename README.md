@@ -1,6 +1,7 @@
-### Mockup
+### Screenshot
 
-![Mockup](https://raw.githubusercontent.com/7R0N1X/andrea-martinez-social-link/main/src/assets/mockup.png)
+![Screenshot](https://github.com/7R0N1X/andrea-martinez-social-link/assets/92642223/9f7c8474-0572-4c47-8928-acc76978f005)
+
 
 ### Prerequisitos
 
